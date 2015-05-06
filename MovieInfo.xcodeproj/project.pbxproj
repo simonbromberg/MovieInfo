@@ -29,6 +29,7 @@
 		D4509EBB1999C0060028993E /* CastMember.m in Sources */ = {isa = PBXBuildFile; fileRef = D4509EBA1999C0060028993E /* CastMember.m */; };
 		D4509EC11999C0060028993E /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = D4509EC01999C0060028993E /* File.m */; };
 		D4509EC51999C02B0028993E /* EntityNames.m in Sources */ = {isa = PBXBuildFile; fileRef = D4509EC41999C02B0028993E /* EntityNames.m */; };
+		D4BEAB0019B421020038C4F6 /* RTKey.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BEAAFF19B421020038C4F6 /* RTKey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		D4509EC01999C0060028993E /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
 		D4509EC31999C02B0028993E /* EntityNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityNames.h; sourceTree = "<group>"; };
 		D4509EC41999C02B0028993E /* EntityNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityNames.m; sourceTree = "<group>"; };
+		D4BEAAFE19B421020038C4F6 /* RTKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTKey.h; sourceTree = "<group>"; };
+		D4BEAAFF19B421020038C4F6 /* RTKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTKey.m; sourceTree = "<group>"; };
 		E4616BC2B34A41D7B15B674B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -177,6 +180,8 @@
 				D4509E921997A51E0028993E /* Images.xcassets */,
 				D4509EB11997BEBF0028993E /* MovieLoaderViewController.h */,
 				D4509EB21997BEBF0028993E /* MovieLoaderViewController.m */,
+				D4BEAAFE19B421020038C4F6 /* RTKey.h */,
+				D4BEAAFF19B421020038C4F6 /* RTKey.m */,
 				D4509EB619996A640028993E /* RTMovieResult.h */,
 				D4509EB719996A640028993E /* RTMovieResult.m */,
 				D4509EB31997BEBF0028993E /* MovieLoaderViewController.xib */,
@@ -373,6 +378,7 @@
 				D4509EC51999C02B0028993E /* EntityNames.m in Sources */,
 				D4509E8B1997A51E0028993E /* AppDelegate.m in Sources */,
 				D4509E841997A51E0028993E /* main.m in Sources */,
+				D4BEAB0019B421020038C4F6 /* RTKey.m in Sources */,
 				D4509EBB1999C0060028993E /* CastMember.m in Sources */,
 				D4509E911997A51E0028993E /* MovieInfo.xcdatamodeld in Sources */,
 			);

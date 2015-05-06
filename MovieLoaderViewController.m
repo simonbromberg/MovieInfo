@@ -13,10 +13,10 @@
 #import "File+Create.h"
 #import "AppDelegate.h"
 
+#import "RTKey.h"
 @import CoreData;
 
 static NSString* const SearchMovieURL = @"http://api.rottentomatoes.com/api/public/v1.0/movies.json";
-static NSString* const RTKey = @"j6e4dtu4hmu3v42qtgrm67k9";
 
 static NSString* const DefaultFolderKey = @"DefaultFolder";
 @interface MovieLoaderViewController () <NSTableViewDataSource, NSTableViewDelegate>
@@ -50,6 +50,8 @@ static NSString* const DefaultFolderKey = @"DefaultFolder";
 
 -(void) loadView {
     [super loadView];
+    NSAssert(![RTKey isEqualToString:UnsetRTKey], @"You must get your own API key and save it in the RTKey.m file");
+    
     if (self.folderPath) {
         [self loadMoviesAtFolder:self.folderPath];
     }
@@ -186,8 +188,8 @@ static NSString* const DefaultFolderKey = @"DefaultFolder";
         self.audienceScoreLabel.stringValue = [NSString stringWithFormat:@"%ld",[movie.audienceScore integerValue]];
         self.synposis.stringValue = movie.synopsis;
         
-        NSImage* image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:movie.thumbnailURL]];
-        self.thumbnail.image = image;
+//        NSImage* image = [[NSImage alloc] initWithContentsOfURL:movie.thumbnailURL];
+//        self.thumbnail.image = image;
         
     }
 }

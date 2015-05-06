@@ -10,6 +10,7 @@
 
 @interface RTMovieResult : NSObject
 -(id) initWithDictionary: (NSDictionary*) dictionary;
++(RTMovieResult*) movieWithDictionary: (NSDictionary*) dictionary;
 
 @property (nonatomic,readonly) NSDictionary* movieDic;
 @property (nonatomic,readonly) NSInteger criticsScore;
@@ -20,7 +21,8 @@
 @property (nonatomic,readonly) NSInteger year;
 @property (nonatomic,readonly) NSInteger runtime;
 @property (nonatomic,readonly) NSString* synopsis;
-@property (nonatomic,readonly) NSString* posterThumbnailURL;
+@property (nonatomic,readonly) NSString* posterThumbnailLink;
+@property (nonatomic,readonly) NSURL* posterThumbnailURL;
 @property (nonatomic,readonly) NSArray* abridgedCast;
 @property (nonatomic,readonly) NSString* rtID;
 @property (nonatomic,readonly) NSString* mpaaRating;

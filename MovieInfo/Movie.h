@@ -21,7 +21,7 @@
 @property (nonatomic, retain) NSString * rtID;
 @property (nonatomic, retain) NSNumber * runtime;
 @property (nonatomic, retain) NSString * synopsis;
-@property (nonatomic, retain) NSString * thumbnailURL;
+@property (nonatomic, retain) NSURL * thumbnailURL;
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSNumber * year;
 @property (nonatomic, retain) NSOrderedSet *cast;

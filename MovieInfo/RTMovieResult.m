@@ -21,6 +21,9 @@
     return self;
 }
 
++(RTMovieResult*) movieWithDictionary:(NSDictionary *)dictionary {
+    return [[RTMovieResult alloc] initWithDictionary:dictionary];
+}
 -(NSDictionary*) movieDic {
     return movie;
 }
@@ -59,8 +62,12 @@
 -(NSString*) synopsis {
     return movie[@"synopsis"];
 }
--(NSString*) posterThumbnailURL {
+-(NSString*) posterThumbnailLink {
     return (movie[@"posters"])[@"thumbnail"];
+}
+
+-(NSURL*) posterThumbnailURL {
+    return [NSURL URLWithString:[self posterThumbnailLink]];
 }
 -(NSArray*) abridgedCast {
     return movie[@"abridged_cast"];
